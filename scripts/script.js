@@ -10,7 +10,18 @@
 // }
 
 
+function startGame (){
+    const alphabet = getRandomAlphabet()
+    const current_alphabet = document.getElementById('current_alphabet');
+    current_alphabet.innerText = alphabet;
+
+    //set background Color
+    setBackgroundColor(alphabet);
+
+}
+
 function play (){
     hideElementByID('home')
     showElementByID('playGround')
+    startGame()
 }
