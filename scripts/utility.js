@@ -19,7 +19,7 @@ function getRandomAlphabet(){
      const randomNumber = Math.random()*25;
      const index = Math.round(randomNumber);
      const alphabet =  alphabets[index]
-     console.log(alphabet)
+     
 
      return alphabet;
 
@@ -30,3 +30,18 @@ function setBackgroundColor(elementId){
     element.classList.add('bg-fuchsia-800');
     
 }
+function removeBgColor(elementID){
+    const element = document.getElementById(elementID)
+    element.classList.remove('bg-fuchsia-800')
+      
+
+}
+
+// function scoreUpdate(elementId){
+//     let count = 0;
+//     const element = document.getElementById(elementId);
+//     let elementValue = element.innerText;
+//      let score = 
+//     console.log(score)
+
+// }
