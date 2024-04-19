@@ -37,11 +37,19 @@ function removeBgColor(elementID){
 
 }
 
-// function scoreUpdate(elementId){
-//     let count = 0;
-//     const element = document.getElementById(elementId);
-//     let elementValue = element.innerText;
-//      let score = 
-//     console.log(score)
+function getElementValueById(elementID){
+    const element = document.getElementById(elementID);
+    const element_text_Value = element.innerText;
+    const value = parseInt(element_text_Value);
+    return value ;
+}
+function setElementValueById (elementID,value){
+    const element = document.getElementById(elementID);
+    element.innerText = value;
+}
 
-// }
+function getElement_TextByID(elementID){
+    const element = document.getElementById(elementID);
+    const elementText =  element.innerText;
+    return elementText;
+}
